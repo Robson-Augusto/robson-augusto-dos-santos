@@ -39,6 +39,7 @@
                     <a href="#home" class="nav-link" data-i18n="nav.home"></a>
                     <a href="#skills" class="nav-link" data-i18n="nav.skills"></a>
                     <a href="#events" class="nav-link" data-i18n="nav.events"></a>
+                    <a href="#portfolio" class="nav-link" data-i18n="nav.potifolio"></a>
                     <a href="#experience" class="nav-link" data-i18n="nav.experience">Contato</a>
                     <div class="seletor-idioma">
                         <label for="langSelect" class="sr-only">Language</label>
@@ -63,7 +64,7 @@
                 <div class="menu-mobile-links">
                     <a href="#values" class="nav-link-mobile" data-i18n="nav.values">Values</a>
                     <a href="#skills" class="nav-link-mobile" data-i18n="nav.skills">Skills</a>
-                    <a href="#projects" class="nav-link-mobile" data-i18n="nav.projects">Projects</a>
+                    <a href="#portfolio" class="nav-link" data-i18n="nav.potifolio"></a>
                     <a href="#experience" class="nav-link-mobile" data-i18n="nav.experience">Experience</a>
                     <a href="#contact" class="nav-link-mobile" data-i18n="nav.contact">Contact</a>
 
@@ -267,15 +268,45 @@
                     </button>
                     <button class="btn-hero btn-hero-certificado-evento">
                         <span class="btn-hero-content">
-                            <a class="btn-hero-link-small" target="_blank" href="./assets/Certificado_rocktseat-Java_unite.png"
-                                data-i18n="certificate">
+                            <a class="btn-hero-link-small" target="_blank"
+                                href="./assets/Certificado_rocktseat-Java_unite.png" data-i18n="certificate">
                                 Certificado
                             </a>
                         </span>
                     </button>
                 </div>
             </div>
-            
+
+        </div>
+    </section>
+
+    <section id="portfolio" class="section-portfolio">
+        <div class="container-principal">
+            <h2 class="section-titulo" data-i18n="portfolio.title">Portfólio</h2>
+            <div class="grid-portfolio">
+
+                <div class="projeto-card">
+                    <div class="projeto-card-body">
+                        <h3 class="projeto-titulo" data-i18n="portfolio.1.title">Linked List</h3>
+                        <p class="projeto-descricao" data-i18n="portfolio.1.description"></p>
+                        <div class="projeto-links">
+                            <a href="https://github.com/Robson-Augusto/linked_list" target="_blank"
+                                class="btn-link-projeto" data-i18n="portfolio.link.deploy">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="projeto-card-body">
+                        <h3 class="projeto-titulo" data-i18n="portfolio.2.title">Cofrinho</h3>
+                        <p class="projeto-descricao" data-i18n="portfolio.2.description"></p>
+                        <div class="projeto-links">
+                            <a href="https://github.com/Robson-Augusto/cofrinho_uninter" target="_blank"
+                                class="btn-link-projeto" data-i18n="portfolio.link.deploy">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -334,21 +365,21 @@
                     <div class="form-group">
                         <label for="name" data-i18n="contact.name">Nome</label>
                         <input type="text" id="name" name="name" required>
-                        <span class="error-message" id="nameError"></span> 
+                        <span class="error-message" id="nameError"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="email" data-i18n="contact.email">E-mail</label>
                         <input type="email" id="email" name="email" required>
-                         <span class="error-message" id="emailError"></span>
+                        <span class="error-message" id="emailError"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="message" data-i18n="contact.message">Mensagem</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
-                         <span class="error-message" id="messageError"></span>
+                        <span class="error-message" id="messageError"></span>
                     </div>
-                    
+
                     <button type="submit" class="btn-submit" data-i18n="contact.submit">Enviar Mensagem</button>
 
                     <p id="formMessage" class="form-submission-message hidden"></p>
